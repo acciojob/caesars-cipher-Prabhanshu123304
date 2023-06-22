@@ -31,10 +31,17 @@ const lookup = {
   ",": ",",
 };
 
-function rot13(encodedStr) {
-  let decodedArr = []; // Your Result goes here
-  // Only change code below this line
-
+function rot13(Str) {
+  let decodedArr = ""; 
+	for(let i=0;i<str.length;i++){
+		if(lookup[str[i]]===undefined){
+			decodedArr += str[i];
+		} else {
+			decodedArr += lookup[str[i]];
+		}
+		return decodedArr;
+	}
+   
   return; //return decodedArr
 }
 
